@@ -1,9 +1,11 @@
 import Reducer from "./pages/Reducer";
+import State from "./pages/State";
 
 function App() {
   return (
     <div className="App">
-      <Reducer />
+      {/* <Reducer /> */}
+      <State />
     </div>
   );
 }
