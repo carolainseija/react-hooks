@@ -4,7 +4,7 @@ const seleccion = {
     departamento: 'departamento',
     Pais: 'pais',
 }
-const reducer = (state, action) => {
+const Reducer = (state, action) => {
     if (action.type == seleccion.pais) {
         return {...state, paisState: action.value }
     } else if (action.type == seleccion.departamento) {
@@ -56,4 +56,4 @@ const Reactjs = () => {
         </div>
     )
 }
-export default Reactjs;
+export default Reducer;

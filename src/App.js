@@ -1,10 +1,9 @@
-// import MyComponent from "./components/MyComponent";
-import Reactjs from "./pages/reactjs";
+import Reducer from "./pages/Reducer";
 
 function App() {
   return (
     <div className="App">
-      <Reactjs />
+      <Reducer />
     </div>
   );
 }
