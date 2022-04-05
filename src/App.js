@@ -1,8 +1,10 @@
+// import MyComponent from "./components/MyComponent";
+import Reactjs from "./pages/reactjs";
 
 function App() {
   return (
     <div className="App">
-      <h1>En cada rama con cada nombre correspondiente tendran los react hooks ejemplos.</h1>
+      <Reactjs />
     </div>
   );
 }
