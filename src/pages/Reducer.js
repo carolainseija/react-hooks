@@ -4,7 +4,7 @@ const seleccion = {
     departamento: 'departamento',
     Pais: 'pais',
 }
-const Reducer = (state, action) => {
+const reducer = (state, action) => {
     if (action.type == seleccion.pais) {
         return {...state, paisState: action.value }
     } else if (action.type == seleccion.departamento) {
@@ -20,7 +20,7 @@ const initialState = {
     depState: 'Montevideo',
 }
 
-const Reactjs = () => {
+const Reducer = () => {
 
     const [state, dispatch] = useReducer(reducer, initialState)
 
