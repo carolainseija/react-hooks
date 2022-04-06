@@ -1,21 +1,35 @@
-import React from "react";
-// import { BrowserRouter as Router,Routes,  Route, Link } from 'react-router-dom'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from "./components/Home";
-import Login from "./components/Login";
+import React, { useState } from "react";
+import Context from "./Context/Context";
+import Counter from "./pages/Counter";
 
 function App() {
 
+  const [count, setCount] = useState(0);
+
+  const HandlerAdd = () => {
+    setCount(count + 1)
+    console.log('count:', count)
+  }
+
+  const HandlerRemove = () => {
+    setCount(count - 1)
+    console.log('count:', count)
+  }
+
+  const valueContext = {
+    HandlerAdd,
+    HandlerRemove,
+  }
+
   return (
-    <BrowserRouter>
-      <Routes>
-        <Router>
-          <Route path="/" exact element={Home} />
-          <Route path="/Login" element={Login} />
-        </Router>
-      </Routes>
-    </BrowserRouter>
-  );
-}
+    <div>
+      <h1>Contador</h1>
+      {count}
+      <Context.Provider value={valueContext}>
+        <Counter />
+      </Context.Provider>
+    </div>
+  )
+};
 
 export default App;
