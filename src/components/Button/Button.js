@@ -1,13 +1,13 @@
 import React, { useReducer } from "react";
 
 const initialState = {
-    initialCount: 0,
+    count: 0,
 }
 
 const reducer = (state, action) => {
     if (action.type === 'add') {
         return {
-            initialState: state.count + 1
+            count: state.count + 1
         }
     } else {
         console.log("funcion")
@@ -25,7 +25,7 @@ const Button = () => {
             <button onClick={añadir}>
                 Click
             </button>
-            {state.initialState}
+            {state.count}
         </div>
     )
 }
