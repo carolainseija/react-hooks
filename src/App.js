@@ -1,8 +1,11 @@
+import Button from "./Components/Button";
+import Card from "./Components/Card";
 
 function App() {
   return (
     <div className="App">
-      <h1>En cada rama con cada nombre correspondiente tendran los react hooks ejemplos.</h1>
+      <h1>Refs</h1>
+      <Card />
     </div>
   );
 }
