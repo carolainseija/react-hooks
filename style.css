@@ -1,0 +1,139 @@
+body {
+    padding-top: 50px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+    padding: 50px 0px;
+}
+
+.content div {
+    height: auto;
+}
+
+h1 {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+}
+
+span {
+    color: red;
+    font-size: 40px;
+}
+
+.content_information {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 100px 0px;
+}
+
+.content_information p {
+    font-size: 24px;
+}
+
+.content_information>div {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lugares {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.img_mate {
+    width: 500px;
+    height: auto;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    padding: 30px;
+    height: auto;
+    min-height: 300px;
+}
+
+aside a {
+    font-size: 18px;
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+    border-bottom: 1px solid gray;
+
+}
+
+aside a:hover {
+    color: red;
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid gray;
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.created {
+    font-size: 18px;
+    text-align: center;
+}
+
+ol {
+    margin: 0px 20px;
+}
+
+ol li {
+    font-size: 24px;
+    cursor: pointer;
+    margin: 5px 0px;
+}
+
+ol li:hover {
+    color: red;
+}
+
+
+/* globals css */
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
